@@ -1,4 +1,4 @@
-﻿Shader "Custom/Rot" {
+﻿Shader "Custom/SimpleRot" {
 	Properties {
 		_MainTex ("Particle Texture", 2D) = "white" {}
 	}
