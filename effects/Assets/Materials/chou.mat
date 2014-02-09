@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: chou
+  m_Shader: {fileID: 4800000, guid: 08742956f34504f619469abb893ba39d, type: 3}
+  m_ShaderKeywords: []
+  m_CustomRenderQueue: -1
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+      data:
+        first:
+          name: _MainTex
+        second:
+          m_Texture: {fileID: 2800000, guid: 63d5c829af9364d0bab5b4d205a6094d, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+    m_Floats: {}
+    m_Colors:
+      data:
+        first:
+          name: _Color
+        second: {r: 1, g: 1, b: 1, a: 1}
+      data:
+        first:
+          name: _C1
+        second: {r: .772058845, g: .410303116, b: .0227076355, a: .501960814}
+      data:
+        first:
+          name: _C2
+        second: {r: .911764681, g: .893270433, b: .241349488, a: .501960814}
+      data:
+        first:
+          name: _C3
+        second: {r: 1, g: .0147058964, b: .0350911282, a: 1}
