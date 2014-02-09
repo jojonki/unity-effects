@@ -46,12 +46,12 @@ Material:
         second: .200000003
       data:
         first:
-          name: _RotationSpeed
-        second: 2
-      data:
-        first:
           name: _S
         second: 1
+      data:
+        first:
+          name: _RotationSpeed
+        second: 2
     m_Colors:
       data:
         first:
