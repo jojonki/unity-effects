@@ -34,7 +34,7 @@
 				float sinY = sin ( _RotationSpeed * _Time.z );
 				float2x2 rotationMatrix = float2x2( cosX, -sinX, sinY, cosX);
 
-				float size =10.0 ;
+				float size = 10.0;
 				float centX = v.vertex.x + size * (v.texcoord.x - 0.5);
 				float centZ = v.vertex.z + size * (v.texcoord.y - 0.5);
 				float3 center = float3(centX, 0.0, centZ);
