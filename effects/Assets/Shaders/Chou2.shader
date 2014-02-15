@@ -1,10 +1,12 @@
-﻿Shader "Custom/Chou" {
+﻿Shader "Custom/Chou2" {
 	Properties {
 		_MainTex ("Particle Texture", 2D) = "white" {}
 		_C1 ("color 1", Color) = (0.5,0.5,0.5,0.5)
 		_C2 ("color 2", Color) = (0.5,0.5,0.5,0.5)
 		_C3 ("color 3", Color) = (1,1,0,1)
 		_C4 ("color 4", Color) = (1,1,0,1)
+		_TargetX ("target x", Float) = 0.0
+		_TargetY ("target y", Float) = 0.0
 	}
 	
 	SubShader {
@@ -23,6 +25,7 @@
 			
 			sampler2D _MainTex;
 			fixed4 _C1,_C2,_C3, _C4;
+			float _TargetX, _TargetY;
 		
 			struct v2f {
 				float4 pos : POSITION;
@@ -85,6 +88,10 @@
 				v.color = lerp(_C1, _C2,sin(angle * 5) + 0.5) * v.color.a;
 				v.color.rgb = lerp(v.color.rgb, _C3, sphere(v.vertex.xyz));
 				v.color.a *= pow(saturate(length(v.vertex.xyz - center)/size+0.75),2);
+				
+				float alpha = 0.001;
+				v.vertex.x = v.vertex.x * (1.0 - alpha) + size * 100 * _TargetX * 2.0 * alpha;
+				v.vertex.z = v.vertex.z * (1.0 - alpha) + size * 100 * _TargetY * -2.0 * alpha;
 				
 				v2f o;
 				o.pos = mul(UNITY_MATRIX_MVP, v.vertex);

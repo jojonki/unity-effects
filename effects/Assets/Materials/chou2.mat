@@ -6,8 +6,8 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: chou
-  m_Shader: {fileID: 4800000, guid: 08742956f34504f619469abb893ba39d, type: 3}
+  m_Name: chou2
+  m_Shader: {fileID: 4800000, guid: eab7b0db6f32a4146bfaa5f294b529b1, type: 3}
   m_ShaderKeywords: []
   m_CustomRenderQueue: -1
   m_SavedProperties:
@@ -29,16 +29,16 @@ Material:
       data:
         first:
           name: _C1
-        second: {r: 1, g: 0, b: .310344696, a: .627451003}
+        second: {r: .95588237, g: .210856378, b: .842843771, a: .501960814}
       data:
         first:
           name: _C2
-        second: {r: .990162253, g: 1, b: .286764681, a: .627451003}
+        second: {r: 1, g: .139705896, b: .139705896, a: .501960814}
       data:
         first:
           name: _C3
-        second: {r: 1, g: .0882353187, b: .522109509, a: .392156869}
+        second: {r: 1, g: 1, b: 0, a: 1}
       data:
         first:
           name: _C4
-        second: {r: 1, g: .925490201, b: 1, a: 1}
+        second: {r: 1, g: 1, b: 0, a: 1}
