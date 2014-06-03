@@ -1,1 +1,1 @@
-Unity Test Projects
+Effect samples are here mainly used Shuriken.
